@@ -33,9 +33,9 @@ Support is not provided.
 
 #################################
 
-This maring script has a dependency on my plsql core library available from https://github.com/timbaird/plsql_core_library.git
+This marking script has a dependency on my plsql core library available from https://github.com/timbaird/plsql_core_library.git
 
-Please install this lbrary propr to installing this makring script.
+Please install this library prior to installing this makring script.
 
 #################################
 
@@ -48,6 +48,7 @@ The library comes with an installation script called INSTALLER.sql
 To use INSTALLER.sql its reference to the file system must be maintained.
 
 This means you need to either:
+
 a. open it though the IDE (e.g. SQL Developer) File menu
 OR
 b. drag and drop it into the IDE (if the IDE supports this)
