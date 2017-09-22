@@ -4,7 +4,7 @@ CLEAR SCREEN;
 
 exec tbaird.A2M_CLEAN_UP;
 
-@./A2_SOLUTION.sql;
+@./A2_SQLCODE.sql;
  
 CLEAR SCREEN;
 
