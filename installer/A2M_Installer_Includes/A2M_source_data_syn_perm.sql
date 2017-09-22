@@ -1,0 +1,50 @@
+
+/*
+DB SYSTEMS ASSIGNMENT 2 DATA WAREHOUSING SYNONYMS AND PERMISSIONS
+*/
+
+BEGIN
+
+EXECUTE IMMEDIATE 'drop public synonym A2PRODCATEGORY';
+EXECUTE IMMEDIATE 'create public synonym A2PRODCATEGORY for ' || USER || '.A2PRODCATEGORY';
+EXECUTE IMMEDIATE 'GRANT SELECT ON A2PRODCATEGORY TO PUBLIC';
+
+EXECUTE IMMEDIATE 'drop public synonym A2CUSTCATEGORY';
+EXECUTE IMMEDIATE 'create public synonym A2CUSTCATEGORY for ' || USER || '.A2CUSTCATEGORY';
+EXECUTE IMMEDIATE 'GRANT SELECT ON A2CUSTCATEGORY TO PUBLIC';
+
+EXECUTE IMMEDIATE 'drop public synonym A2manufacturer';
+EXECUTE IMMEDIATE 'create public synonym A2manufacturer for ' || USER || '.A2manufacturer';
+EXECUTE IMMEDIATE 'GRANT SELECT ON A2manufacturer TO PUBLIC';
+
+EXECUTE IMMEDIATE 'drop public synonym A2shipping';
+EXECUTE IMMEDIATE 'create public synonym A2shipping for ' || USER || '.A2shipping';
+EXECUTE IMMEDIATE 'GRANT SELECT ON A2shipping TO PUBLIC';
+
+EXECUTE IMMEDIATE 'drop public synonym A2product';
+EXECUTE IMMEDIATE 'create public synonym A2product for ' || USER || '.A2product';
+EXECUTE IMMEDIATE 'GRANT SELECT ON A2product TO PUBLIC';
+
+EXECUTE IMMEDIATE 'drop public synonym A2custbris';
+EXECUTE IMMEDIATE 'create public synonym A2custbris for ' || USER || '.A2custbris';
+EXECUTE IMMEDIATE 'GRANT SELECT ON A2custbris TO PUBLIC';
+
+EXECUTE IMMEDIATE 'drop public synonym A2SALEBRIS';
+EXECUTE IMMEDIATE 'create public synonym A2SALEBRIS for ' || USER || '.A2SALEBRIS';
+EXECUTE IMMEDIATE 'GRANT SELECT ON A2SALEBRIS TO PUBLIC';
+
+EXECUTE IMMEDIATE 'drop public synonym A2custmelb';
+EXECUTE IMMEDIATE 'create public synonym A2custmelb for ' || USER || '.A2custmelb';
+EXECUTE IMMEDIATE 'GRANT SELECT ON A2custmelb TO PUBLIC';
+
+EXECUTE IMMEDIATE 'drop public synonym A2SALEmelb';
+EXECUTE IMMEDIATE 'create public synonym A2SALEmelb for ' || USER || '.A2SALEmelb';
+EXECUTE IMMEDIATE 'GRANT SELECT ON A2SALEmelb TO PUBLIC';
+
+EXECUTE IMMEDIATE 'drop public synonym DWDATE';
+EXECUTE IMMEDIATE 'create public synonym DWDATE for ' || USER || '.DWDATE';
+EXECUTE IMMEDIATE 'GRANT SELECT ON DWDATE TO PUBLIC';
+
+COMMIT;
+
+end;
