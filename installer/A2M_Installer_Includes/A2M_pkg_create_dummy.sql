@@ -14,7 +14,8 @@ Create Or Replace Package Body A2M_PKG_Create_Dummy As
 
     Cursor Vcur Is
       Select * 
-      From TBAIRD.A2M_Db_Object_Item
+	  From A2M_Db_Object_Item
+      --From TBAIRD.A2M_Db_Object_Item
       where objectid = pobjectid;
 
   Begin
@@ -22,7 +23,8 @@ Create Or Replace Package Body A2M_PKG_Create_Dummy As
     if pdebug then dopl('DEBUG - SELECTING OBJECT NAME IN WHERE OBJECT ID = ' || POBJECTID); END IF;
 
     Select Objectname Into Vname
-    From TBAIRD.A2M_Db_Object
+	From A2M_Db_Object
+    --From TBAIRD.A2M_Db_Object
     where objectid = pobjectid;
     
     if pdebug then dopl('DEBUG - OBJECTNAME: ' || VNAME); END IF;
